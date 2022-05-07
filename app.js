@@ -14,6 +14,9 @@ const getUserChoice = () => {
             break;
         }else{
             userInput = prompt('That is not a legal selection, please choose from Rock, Paper, or Scissors.').toLowerCase();
+            if(userInput == 'scissors' || userInput == 'paper' || userInput == 'rock'){
+                break;
+            }
         }
     }
     while(userInput != 'scissors' || userInput != 'paper' || userInput != 'rock' || userInput != 'bomb');
